@@ -51,7 +51,7 @@
         <div class="col-lg  col-md-6 col-sm-12 col">
 
 
-            <form action="{%url 'search'}" class="search">
+            <form action="{%url 'search'%}" class="search">
                 <div class="input-group w-100">
                     <input type="text" class="form-control" style="width:60%;" placeholder="Buscar productos" name="keyword">
                     
@@ -70,8 +70,8 @@
                         <div class="widget-header">
                             <small class="title text-muted">Bienvenido visitante!</small>
                             <div> 
-                                <a href="./signin.html">Login</a> <span class="dark-transp"> | </span>
-                                <a href="./register.html"> Registrar</a>
+                                <a href="{%url 'login'%}">Login</a> <span class="dark-transp"> | </span>
+                                <a href="{%url 'register'%}"> Registrar</a>
                             </div>
                         </div>
                         <a href="{%url 'cart'%}" class="widget-header pl-3 ml-3">

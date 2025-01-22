@@ -32,7 +32,7 @@
                   <div class="item-option-select">
                     <h6>Seleccionar Color</h6>
                     
-                    <select name="form-control" id="color" required>
+                    <select name="color" id="color" required>
                       <option value="" disabled selected> Seleccione</option>
                       {% for i in single_product.variation_set.colors %}
                       <option value="{{i.variation_value | lower}}">{{i.variation_value | capfirst}}</option>
@@ -45,7 +45,7 @@
                   <div class="item-option-select">
                     <h6>Seleccionar Talle</h6>
 
-                    <select name="form-control" id="talla" required>
+                    <select name="talla" id="talla" required>
                       <option value="" disabled selected> Seleccione</option>
                       {% for i in single_product.variation_set.tallas %}
                       <option value="{{i.variation_value | lower}}">{{i.variation_value | capfirst}}</option>
